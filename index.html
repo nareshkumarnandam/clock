@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./analog.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" sizes="512x512" href="./clock.png">
+</head>
+<body id="body">
+    <main>
+      <div class="weather">
+        <div id="weather" class="container">
+          <div class="icon">---</div>
+          <div class="temp">-°C</div>
+          <div class="summary">----</div>
+          <div class="location"></div>
+        </div>
+      </div>
+        <div id="clock">
+            <div class="digital">
+                <h2 id="heading">Digital Clock</h2>
+                  <div class="time">
+                    <div class="box" id="boxes1">
+                        <span id="hours">00</span>
+                        <span class="text">Hours</span>
+                      </div>
+                      <div class="box" id="boxes2">
+                        <span id="mins">00</span>
+                        <span class="text">Minutes</span>
+                      </div>
+                      <div class="box" id="boxes3">
+                        <span id="secs">00</span>
+                        <span class="text">Seconds</span>
+                      </div>
+                      <div class="box" id="boxes4">
+                        <span id="ampm">AM</span>
+                      </div>
+                  </div>
+            </div>
+            <div class="analog">
+              <h2 id="heading">Analog Clock</h2>
+              <div id="clockContainer">
+                <div id="hour"></div>
+                <div id="minute"></div>
+                <div id="second"></div>
+            </div>
+            </div>
+               
+        </div>
+        
+    </main>
+    <script src="./analog.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
